@@ -1,0 +1,77 @@
+/**
+ * main-menu navigation
+ */
+.navbar-custom {
+    font-size: 1.2rem;
+    font-weight: 400;
+    .nav-item a {
+        color: $black;
+        &:hover {
+            color: $green;
+        }
+    }
+    .active > a {
+        color: $green;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .dropdown-toggle::after {
+        border: 0;
+        font-family: 'Font Awesome 5 Free';
+        content: '\f078';
+        font-size: .7rem;
+        margin-left: .5rem;
+    }
+    .dropdown-menu {
+        padding: 0;
+        border: 1px solid $gray;
+        border-radius: 0;
+        box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+        .dropdown-item {
+            padding: 0;
+            a {
+                padding: .75rem 1.25rem;
+                display: block;
+                text-decoration: none;
+            }
+            &.active, &:active {
+                background-color: $gray;
+            }
+        }
+    }
+    .navbar-brand{
+        min-width: 300px;
+    }
+
+    // Mobile
+    .navbar-toggler {
+        background-color: $gray;
+        border: 2px solid $gray;
+    }
+    @media (max-width: 991px) {
+        .navbar-brand {
+            max-width: 275px;
+        }
+        .navbar-nav {
+            font-size: 1.5rem;
+            font-weight: 300;
+            text-align: center;
+            .nav-item {
+                border-bottom: 1px solid $gray;
+            }
+            .nav-item > a {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+        .dropdown-menu {
+            .dropdown-item {
+                text-align: center;
+                border-bottom: 1px solid $gray;
+            }
+        }
+    }
+
+}

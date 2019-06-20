@@ -1,0 +1,21 @@
+name: Ashrae
+type: theme
+description: 'Ashrae Bi-State Theme'
+package: Core
+version: '2.5'
+base theme: false
+core: '8.x'
+project: 'drupal'
+
+libraries:
+  - 'ashrae/global-css'
+  - 'ashrae/global-js'
+
+regions:
+  branding: 'Branding'
+  main_menu: 'Main Menu'
+  header: 'Header'
+  content: 'Content'
+  sidebar_right: 'Sidebar Right'
+  footer: 'Footer'
+  disabled: 'Disabled'
