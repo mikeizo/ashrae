@@ -17,4 +17,4 @@ sites/*/files
 sites/*/private
 
 php.ini
-.htaccess
+/.htaccess
