@@ -4,7 +4,7 @@ description: 'Ashrae Bi-State Theme'
 package: Core
 version: '2.5'
 base theme: false
-core: '8.x'
+core_version_requirement: ^8.8 || ^9
 project: 'drupal'
 
 libraries:
